@@ -48,6 +48,14 @@ const SubHeroSection = () => {
     <div className='flex flex-wrap md:flex-nowrap gap-5 w-[95%]  my-0 mx-auto  mt-[23px]'>
       <div className='w-full md:w-1/2 bg-secondary-color p-5 rounded-lg'>
         <AreaChart />
+        <a
+          className='text-blue-800 text-sm hover:underline cursor-pointer'
+          href='https://app.powerbi.com/view?r=eyJrIjoiNDE3NWEyNzQtNzUwZS00ZmViLWI0YjItYzE2MGIxNzVmY2E0IiwidCI6Ijg3ZTFjNTNlLTI4MDMtNDdkYy1hZjFmLTI5NjM4OGFmYThkYiJ9'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Detailed Presentation
+        </a>
       </div>
       <div className='w-full md:w-1/2 bg-secondary-color p-5 rounded-lg'>
         <h1 className='font-semibold text-primary-color mb-5'>

@@ -17,7 +17,7 @@ const CrudeOilSection = () => {
   }, [])
   useEffect(() => {
     const getLatestCrudeOilPrice = async () => {
-      const URL = `https://www.alphavantage.co/query?function=WTI&interval=monthly&apikey=${apiKey}`
+      const URL = `https://www.alphavantage.co/query?function=NATURAL_GAS&interval=monthly&apikey=${apiKey}`
       const response = await axios.get(URL)
 
       setGas(response.data?.data[0]?.value)

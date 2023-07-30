@@ -2,6 +2,7 @@ import bitcoin from '../assets/img/bitcoin.png'
 import dollar from '../assets/img/dollar.png'
 import euros from '../assets/img/euros.png'
 import pounds from '../assets/img/pounds.png'
+import naira from '../assets/img/naira.png'
 
 export const heroData = [
   {
@@ -10,9 +11,9 @@ export const heroData = [
     abbr: 'BTC',
   },
   {
-    text: 'Dollar',
-    image: dollar,
-    abbr: 'USD',
+    text: 'Naira',
+    image: naira,
+    abbr: 'NGN',
   },
   {
     text: 'Euros',

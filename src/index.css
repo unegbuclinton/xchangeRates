@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input {
+  border: none;
+  outline: none;
+  height: 20px;
+  padding: 15px 5px;
+  border-radius: 4px;
+}
+
+input[type='number']:focus {
+  border: 2px solid #023e8a; /* Change the border color to your preferred color */
+  outline: none; /* Optional: To remove the default outline on focus */
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}

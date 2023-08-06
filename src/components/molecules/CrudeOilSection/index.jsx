@@ -1,6 +1,5 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import ExcahngeCard from '../ExchangeInItials'
 
 const CrudeOilSection = () => {
   const [brentValue, setBrentValue] = useState()
@@ -38,11 +37,25 @@ const CrudeOilSection = () => {
     { text: 'WTI Oil', value: wti },
     { text: 'Natural Gas', value: gas, from: 'million BTU' },
   ]
+
+  const ExcahngeCard = ({ text, value, src, from }) => {
+    return (
+      <div className='flex items-start gap-5'>
+        <div className='flex items-center gap-5'>
+          <p className='font-light py-3'>{` Dollar to ${
+            from ? from : text
+          } `}</p>
+          <h3 className='font-bold'>{`${value} USD`}</h3>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className='my-[23px] '>
       <div className='w-[95%] bg-secondary-color rounded-lg px-14 py-5 my-0 mx-auto'>
-        <h1 className='text-lg text-primary-color mb-10'> Prices of Fuels</h1>
-        <div className='flex flex-wrap justify-center gap-10'>
+        <h1 className='text-lg text-primary-color mb-4'> Prices of Fuels</h1>
+        <div className='flex flex-col '>
           {crudeData?.map(({ text, value, from }, idx) => (
             <ExcahngeCard key={idx} text={text} value={value} from={from} />
           ))}

@@ -2,38 +2,25 @@ import { Area } from '@ant-design/plots'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
-const AreaChart = () => {
-  const [data, setData] = useState([])
-  const apiKey = import.meta.env.VITE_API_KEY
-  useEffect(() => {
-    const getLatestCrudeOilPrice = async () => {
-      const URL = `https://www.alphavantage.co/query?function=BRENT&interval=monthly&apikey=${apiKey}`
-      const response = await axios.get(URL)
-      const data = response.data.data
-      const reverseData = [...data].reverse()
-      setData(reverseData)
-    }
-    getLatestCrudeOilPrice()
-  }, [])
+const EmbeddedTaggbox = () => {
+  return (
+    <div style={{ width: '100%', height: '100%' }}>
+      <div
+        className='taggbox'
+        style={{ width: '100%', height: '100%' }}
+        data-widget-id='138715'
+        data-tags='false'
+      ></div>
+      <script
+        src='https://widget.taggbox.com/embed-lite.min.js'
+        type='text/javascript'
+      ></script>
+    </div>
+  )
+}
 
-  const config = {
-    data,
-    xField: 'date',
-    yField: 'value',
-    xAxis: {
-      range: [0, 1],
-      tickCount: 5,
-    },
-    animation: false,
-    slider: {
-      start: 0.1,
-      end: 0.9,
-      trendCfg: {
-        isArea: true,
-      },
-    },
-  }
-  return <Area {...config} style={{ height: '140px' }} />
+const AreaChart = () => {
+  return <EmbeddedTaggbox />
 }
 
 export default AreaChart

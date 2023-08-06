@@ -1,29 +1,21 @@
 import bitcoin from '../assets/img/bitcoin.png'
-import dollar from '../assets/img/dollar.png'
-import euros from '../assets/img/euros.png'
-import pounds from '../assets/img/pounds.png'
-import naira from '../assets/img/naira.png'
+import dollar from '../assets/img//dollar.png'
 
 export const heroData = [
   {
-    text: 'Bitcoin',
+    textValue: 'BTC',
+    text: 'Dollar',
     image: bitcoin,
     abbr: 'BTC',
+    base: 'Bitcoin',
   },
   {
+    textValue: 'Dollar',
     text: 'Naira',
-    image: naira,
+    image: dollar,
     abbr: 'NGN',
-  },
-  {
-    text: 'Euros',
-    image: euros,
-    abbr: 'EUR',
-  },
-  {
-    text: 'Pounds',
-    image: pounds,
-    abbr: 'GBP',
+    pref: 'NGN',
+    base: 'Dollar',
   },
 ]
 

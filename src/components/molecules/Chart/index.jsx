@@ -45,7 +45,11 @@ const Weather = () => {
   return (
     <div className='w-full md:w-[40.3%] bg-secondary-color rounded-lg px-10 py-5 my-0 '>
       <h1 className='text-[#023E8A] text-xl mb-8'>
-        {capitalizeFirstLetter(weatherData?.address)}
+        Weather (
+        <span className='text-base'>
+          {capitalizeFirstLetter(weatherData?.address)}
+        </span>
+        )
       </h1>
       <div className='flex gap-5'>
         <div>

@@ -45,11 +45,11 @@ const SubHeroSection = () => {
   }
 
   return (
-    <div className='flex flex-wrap md:flex-nowrap gap-5 w-[95%]  my-0 mx-auto  mt-[23px]'>
-      <div className='w-full md:w-1/2 bg-secondary-color rounded-lg'>
+    <div className='flex flex-wrap md:flex-nowrap gap-5  my-0 px-5 mt-[23px]'>
+      <div className='w-full  bg-secondary-color rounded-lg'>
         <CrudeOilSection />
       </div>
-      <div className='w-full md:w-1/2 bg-secondary-color p-5 rounded-lg'>
+      <div className='w-full bg-secondary-color p-5 rounded-lg'>
         <h1 className='font-semibold text-primary-color mb-5'>
           Exchange Converter
         </h1>

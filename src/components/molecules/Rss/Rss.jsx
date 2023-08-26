@@ -50,7 +50,7 @@ const Rss = () => {
     return pairs
   }
   return (
-    <div className='w-full md:w-[30.3%] bg-light-pink rounded-lg px-10 py-5 my-0 '>
+    <div className='w-full md:w-[29%] bg-light-pink rounded-lg px-10 py-5 my-0 '>
       <h1 className='text-[#023E8A] text-xl mb-8 flex gap-2 items-center'>
         <span>
           <img src={Fire} alt='' />

@@ -37,7 +37,7 @@ const HeroSection = () => {
   }, [])
   return (
     <div className='flex flex-col md:flex-row gap-5 px-5'>
-      <div className='w-full md:w-[60.3%] bg-secondary-color rounded-lg px-14 py-5 my-0 '>
+      <div className='w-full md:w-[51%] bg-secondary-color rounded-lg px-14 py-5 my-0 '>
         <h1 className='text-lg text-primary-color mb-10'>
           My Currency Exchange
         </h1>

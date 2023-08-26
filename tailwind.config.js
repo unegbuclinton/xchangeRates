@@ -10,7 +10,7 @@ module.exports = {
         dark: '#1c1a1a',
         'primary-color': '#023E8A',
         'secondary-color': '#EDF5FE',
-        'light-grey': '#333333',
+        'light-pink': 'rgba(243, 182, 204, 0.22)',
         torqorise: '#C1DBFD',
         'mikando-yellow': '#FFC633',
       },

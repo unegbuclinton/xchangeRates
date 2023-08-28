@@ -9,9 +9,10 @@ const Rss = () => {
   useEffect(() => {
     const getNewsHeadline = async () => {
       const url =
-        'https://newsapi.org/v2/top-headlines?country=ng&category=business&apiKey=945c1260c15c4f21938e5a1ebb46c605'
+        'https://gnews.io/api/v4/search?q=example&lang=en&country=ng&max=10&apikey=46e59774ce891e21cf9b762e0e09eba6'
 
       const response = await axios.get(url)
+
       setArticleData(response.data.articles)
     }
     getNewsHeadline()
